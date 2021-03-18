@@ -1,1 +1,0 @@
-// Funcoes da Calculadora
