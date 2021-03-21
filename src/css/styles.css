@@ -12,7 +12,41 @@
   --yellow:	#f1fa8c;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: var(--white);
-  color: var(--background-darker);
+  color: var(--white);
+  height: 100vh;
+}
+
+#containerPrincipal {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  
+}
+
+#containerCalculadora {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  background-color: var(--background-lighter);
+  text-align: center;
+  justify-content: center;
+  align-items: start;
+}
+
+#containerHistorico {
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+  background-color: var(--background);
+  text-align: center;
+  justify-content: center;
+  align-items: start;
 }
