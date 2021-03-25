@@ -1,30 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Loaded');
-
-  // here goes the logical
-});
+let expression = '';
 
 let press = (key) => {
-  if (typeof(key) === 'number') {
-    updateDisplay(key, false);
-  } else {
-    switch (key) {
-      case 'clear':
-        clearDisplay();
-    }
+  if (key === '=') {
+    let result = mexp.eval(expression);
+    updateDisplay(result, true);
+  } else if (key === 'clear') {
+    clearDisplay();
   }
-}
+   else {
+    expression += '' + key;
+    updateDisplay(key, false);
+  }
+};
 
 let updateDisplay = (newText, clear) => {
   let display = document.getElementById('display');
   if (clear === true) {
+    display.innerText = '';
     display.innerText = newText;
   } else {
     display.innerText = display.innerText += newText;
   }
-}
+};
 
 let clearDisplay = () => {
-  let display = document.getElementById('display');
-  display.innerText = '';
-}
+  expression = '';
+  updateDisplay(expression, true);
+};

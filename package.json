@@ -1,0 +1,22 @@
+{
+  "name": "calculadora-basica",
+  "version": "1.0.0",
+  "description": "Trabalho em grupo para criar uma calculadora básica.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliavaz/calculadora-basica.github.io.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/juliavaz/calculadora-basica.github.io/issues"
+  },
+  "homepage": "https://github.com/juliavaz/calculadora-basica.github.io#readme",
+  "dependencies": {
+    "math-expression-evaluator": "^1.3.7"
+  }
+}
