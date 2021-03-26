@@ -90,11 +90,9 @@ body {
 }
 
 #containerHistorico {
-  display: flex;
   width: 20%;
   height: 100%;
   background-color: var(--background);
   text-align: center;
-  justify-content: center;
-  align-items: start;
+  overflow: scroll;
 }
