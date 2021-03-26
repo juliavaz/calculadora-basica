@@ -94,9 +94,12 @@ body {
   height: 100%;
   background-color: var(--background);
   text-align: center;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: auto;
 }
 
 .history-block {
   cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
