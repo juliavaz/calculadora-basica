@@ -48,8 +48,8 @@ body {
   border-radius: 20px;
   margin-top: 20px;
   margin-bottom: 46px;
-  background-color: var(--white);
-  color: var(--background-darker);
+  background-color: black;
+  color: white;
   font-size: 300%;
   font-weight: 700;
   letter-spacing: 10px;
@@ -71,9 +71,9 @@ body {
   font-size: 64px;
   font-family: Montserrat;
   font-weight: 300;
-  background-color: white;
+  background-color: black;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: black;
+  color: white;
 }
 
 .button {
@@ -91,8 +91,8 @@ body {
 
 .clearButton {
   font-family: Montserrat;
-  color: black;
-  font-weight: 600;
+  color: white;
+  font-weight: 300;
   font-size: 64px;
   position: fixed;
   transform: translateX(250px);
@@ -105,22 +105,21 @@ body {
   height: 897px;
   margin-top: 26px;
   border-radius: 20px;
-  background-color: white;
+  background-color: black;
   text-align: center;
   overflow-x: auto;
 }
 
 .history-block {
   cursor: pointer;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
 }
 
 #historicoExpressoes {
   margin-top: 60px;
   font-family: Montserrat;
   font-weight: 600;
-  color: black;
+  color: white;
   font-size: 24px;
 }
 
@@ -136,9 +135,10 @@ body {
   align-items: center;
   width: 253px;
   height: 73px;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: white;
   color: black;
+  font-size: 20px;
   font-family: Montserrat;
   font-weight: 600;
 }
