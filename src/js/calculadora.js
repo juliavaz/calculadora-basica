@@ -17,7 +17,7 @@ let press = (key) => {
 
 let updateHistory = (expression, expressionResult) => {
   history +=
-    `<div onclick="loadHistory('${expression}')">${expressionResult}</div>` +
+    `<div class="history-block" onclick="loadHistory('${expression}')">${expressionResult}</div>` +
     '<br>';
   let domHistory = document.getElementById('historicoExpressoes');
   domHistory.innerHTML = history;
