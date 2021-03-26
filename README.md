@@ -4,7 +4,7 @@ Trabalho em grupo para criar uma calculadora básica.
 
 ## Link de acesso
 
-[http://juliavaz.me/calculadora-basica.github.io/](http://juliavaz.me/calculadora-basica.github.io/)
+[http://juliavaz.me/calculadora-basica/](http://juliavaz.me/calculadora-basica/)
 
 #
 
