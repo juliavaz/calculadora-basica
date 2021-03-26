@@ -1,23 +1,24 @@
 let expression = '';
-let history = ''
+let history = '';
 
 let press = (key) => {
   if (key === '=') {
     let result = mexp.eval(expression);
     updateDisplay(result, true);
-    updateHistory(expression + ' = ' + result);
+    updateHistory(expression, `${expression} = ${result}`);
     expression = result;
   } else if (key === 'clear') {
     clearDisplay();
-  }
-   else {
+  } else {
     expression += '' + key;
     updateDisplay(key, false);
   }
 };
 
-let updateHistory = (expression) => {
-  history += expression + '<br>';
+let updateHistory = (expression, expressionResult) => {
+  history +=
+    `<div onclick="loadHistory('${expression}')">${expressionResult}</div>` +
+    '<br>';
   let domHistory = document.getElementById('historicoExpressoes');
   domHistory.innerHTML = history;
 };
@@ -35,4 +36,9 @@ let updateDisplay = (newText, clear) => {
 let clearDisplay = () => {
   expression = '';
   updateDisplay(expression, true);
+};
+
+let loadHistory = (exp) => {
+  expression = exp;
+  updateDisplay(exp, true);
 };
