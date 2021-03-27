@@ -16,7 +16,7 @@ let press = (key) => {
 };
 
 let backspace = () => {
-  expression = expression.substring(0, -1);
+  expression = expression.substr(0, expression.length - 1);
   updateDisplay(expression, true);
 }
 
@@ -83,10 +83,10 @@ let addKey  = (event) => {
   } else if (char == "/") {
     press(char, false);
   } else if (char == "=") {
-    press(char, false);
+    press('=', false);
   } else if (char == "c") {
     press("clear" , false);
-  } else if (char == "Enter") {
+  } else if (code == "13") {
     press("=", false);
   } else { }
   event.preventDefault();
