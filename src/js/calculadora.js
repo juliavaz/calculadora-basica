@@ -75,7 +75,7 @@ let addKey  = (event) => {
     press(char, false);
   } else if (char == "*" || code == 42) {
     press(char, false);
-  } else if (char == "+" || code == 43 ) {
+  } else if (char == "+" || code == 43) {
     press(char, false);
   } else if (char == "-" || code == 45) {
     press(char, false);
