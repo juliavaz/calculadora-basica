@@ -91,7 +91,7 @@ let addKey  = (event) => {
     press("=", false);
   }
    else {
-    display.innerText = display.innerText += key;
+    
   }
   event.preventDefault();
 }
