@@ -45,47 +45,44 @@ let loadHistory = (exp) => {
 
 let addKey  = (event) => {  
   let display = document.getElementById('display');
-  let code = event.keyCode;
-  let char = String.fromCharCode(code);
-  
+  let char = String.fromCharCode(event.keyCode);
+
   if(char == "0"){   
     press(char, false);
-  } else if (char == "1" || code == 49) {
+  } else if (char == "1") {
     press(char, false);
-  } else if (char == "2" || code == 50) {
+  } else if (char == "2") {
     press(char, false);
-  } else if (char == "3" || code == 51) {
+  } else if (char == "3") {
     press(char, false);
-  } else if (char == "4" || code == 52) {
+  } else if (char == "4") {
     press(char, false);
-  } else if (char == "5" || code == 53) {
+  } else if (char == "5") {
     press(char, false);
-  } else if (char == "6" || code == 54) {
+  } else if (char == "6") {
     press(char, false);
-  } else if (char == "7" || code == 55) {
+  } else if (char == "7") {
     press(char, false);
-  } else if (char == "8" || code == 56) {
+  } else if (char == "8") {
     press(char, false);
-  } else if (char == "9" || code == 57) {
+  } else if (char == "9") {
     press(char, false);
-  } else if (char == "*" || code == 42) {
+  } else if (char == "*") {
     press(char, false);
-  } else if (char == "+" || code == 43 ) {
+  } else if (char == "+" ) {
     press(char, false);
-  } else if (char == "-" || code == 45) {
+  } else if (char == "-") {
     press(char, false);
-  } else if (char == "." || code == 46) {
+  } else if (char == ".") {
     press(char, false);
-  } else if (char == "/" || code == 47) {
+  } else if (char == "/") {
     press(char, false);
-  } else if (char == "=" || code == 61) {
+  } else if (char == "=") {
     press(char, false);
-  } else if (char == "Backspace" || code == 8) {
+  } else if (char == "c") {
     press("clear" , false);
-  } else if (char == "Enter" || code == 13) {
+  } else if (char == "Enter") {
     press("=", false);
-  } else {
-    display.innerText = display.innerText += key;
-  }
+  } 
 }
 document.addEventListener("keypress", addKey);
