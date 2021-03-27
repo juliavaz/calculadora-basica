@@ -39,3 +39,57 @@
     font-size: 48px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  #containerPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .button {
+    width: 69px;
+    height: 73px;
+    margin: 5px;
+  }
+
+  #buttons {
+    width: 347px;
+    height: 517px;
+    font-size: 36px;
+  }
+
+  #display {
+    width: 347px;
+    height: 99px;
+    font-size: 32px;
+  }
+
+  .zero {
+    width: 146px;
+    height: 74px;
+  }
+
+  .igual {
+    width: 300px;
+    height: 71px;
+    background-color: #fa9014;
+  }
+
+  #containerHistorico {
+    width: 311px;
+    height: 580px;
+  }
+
+  .clearButton {
+    margin-left: 280px;
+    margin-top: 45px;
+    font-size: 48px;
+  }
+
+  #containerhistoricocelular {
+    display: none;
+    opacity: 0;
+  }
+}
