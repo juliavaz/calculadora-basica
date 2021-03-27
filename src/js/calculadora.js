@@ -22,7 +22,7 @@ let backspace = () => {
 
 let updateHistory = (expression, expressionResult) => {
   history +=
-    `<div class="history-block" onclick="loadHistory('${expression}')">${expressionResult}</div>` +
+    `<div class="history-block" onclick="loadHistory('${expression}')">${expressionResult} <img src="src/img/copy-icon.svg" width="20px"></div>` +
     '<br>';
   let domHistory = document.getElementById('historicoExpressoes');
   domHistory.innerHTML = history;
