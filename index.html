@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="sortcut icon" href="./src/img/calculator-iconsvg.svg" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap" rel="stylesheet">
   <script src="src/js/math-expression-evaluator.min.js"></script>
   <script src="src/js/calculadora.js"></script>
 </head>
@@ -18,30 +19,33 @@
 <body>
   <div id="containerPrincipal">
     <div id="containerCalculadora">
-      <div id="display">
+      <div id="containerdisplay">
+        <div class="clearButton" onclick="press('clear')">C</div>
+        <div id="display">
+        </div>
       </div>
-      <div class="button clearButton" onclick="press('clear')">C</div>
       <div id="buttons">
 
         <div class="button" onclick="press(7)">7</div>
         <div class="button" onclick="press(8)">8</div>
         <div class="button" onclick="press(9)">9</div>
-        <div class="button" onclick="press('*')">x</div>
+        <div class="button operacao" onclick="press('+')">&#x2b;</div>
         
         <div class="button" onclick="press(4)">4</div>
         <div class="button" onclick="press(5)">5</div>
         <div class="button" onclick="press(6)">6</div>
-        <div class="button" onclick="press('-')">-</div>
+        <div class="button operacao" onclick="press('-')">&#8722;</div>
         
         <div class="button" onclick="press(1)">1</div>
         <div class="button" onclick="press(2)">2</div>
         <div class="button" onclick="press(3)">3</div>
-        <div class="button" onclick="press('/')">/</div>
+        <div class="button operacao" onclick="press('*')">&#xd7;</div>
+        
+        <div class="button zero" onclick="press(0)">0</div>
+        <div class="button" onclick="press('.')">&#8901;</div>
+        <div class="button operacao" onclick="press('&#xf7')">&#xf7;</div>
 
-        <div class="button" onclick="press(0)">0</div>
-        <div class="button" onclick="press('.')">.</div>
-        <div class="button" onclick="press('+')">+</div>
-        <div class="button" onclick="press('=')">=</div>
+        <div class="button igual" onclick="press('=')">&#61;</div>
       </div>
     </div>
       <div id="containerHistorico">
