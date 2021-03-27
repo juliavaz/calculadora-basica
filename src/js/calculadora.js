@@ -55,39 +55,39 @@ let addKey  = (event) => {
   
   if (char == "0") {   
     press(char, false);
-  } else if (char == "1") {
+  } else if (char == "1" || code == 49) {
     press(char, false);
-  } else if (char == "2") {
+  } else if (char == "2" || code == 50) {
     press(char, false);
-  } else if (char == "3") {
+  } else if (char == "3" || code == 51) {
     press(char, false);
-  } else if (char == "4") {
+  } else if (char == "4" || code == 52) {
     press(char, false);
-  } else if (char == "5") {
+  } else if (char == "5" || code == 53) {
     press(char, false);
-  } else if (char == "6") {
+  } else if (char == "6" || code == 54) {
     press(char, false);
-  } else if (char == "7") {
+  } else if (char == "7" || code == 55) {
     press(char, false);
-  } else if (char == "8") {
+  } else if (char == "8" || code == 56) {
     press(char, false);
-  } else if (char == "9") {
+  } else if (char == "9" || code == 57) {
     press(char, false);
-  } else if (char == "*") {
+  } else if (char == "*" || code == 42) {
     press(char, false);
-  } else if (char == "+" ) {
+  } else if (char == "+" || code == 43 ) {
     press(char, false);
-  } else if (char == "-") {
+  } else if (char == "-" || code == 45) {
     press(char, false);
-  } else if (char == ".") {
+  } else if (char == "." || code == 46) {
     press(char, false);
-  } else if (char == "/") {
+  } else if (char == "/" || code == 47) {
     press(char, false);
-  } else if (char == "=") {
+  } else if (char == "=" || code == 61) {
     press(char, false);
   } else if (char == "c") {
     press("clear" , false);
-  } else if (char == "Enter") {
+  } else if (char == "Enter" || code == 13) {
     press("=", false);
   }
    else {
