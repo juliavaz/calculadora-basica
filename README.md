@@ -8,6 +8,11 @@ Trabalho em grupo para criar uma calculadora básica.
 
 #
 
+## Projeto Figma 
+
+[WireFrames em diversos dispositivos](https://www.figma.com/file/m9aswXZexOQixZeURBJoAy/Untitled?node-id=1%3A3)
+
+#
 ## Contribuidores ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
