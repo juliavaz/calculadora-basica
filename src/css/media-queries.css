@@ -1,0 +1,41 @@
+@media screen and (max-width: 1080px), screen and (max-height: 900px) {
+  .button {
+    width: 84px;
+    height: 67px;
+    margin: 6px;
+  }
+
+  #buttons {
+    width: 421px;
+    height: 471px;
+    font-size: 36px;
+  }
+
+  #display {
+    width: 421px;
+    height: 90px;
+    font-size: 32px;
+  }
+
+  .zero {
+    width: 177px;
+    height: 67px;
+  }
+
+  .igual {
+    width: 364px;
+    height: 65px;
+    background-color: #fa9014;
+  }
+
+  #containerHistorico {
+    width: 311px;
+    height: 580px;
+  }
+
+  .clearButton {
+    margin-left: 350px;
+    margin-top: 40px;
+    font-size: 48px;
+  }
+}

@@ -78,7 +78,6 @@ body {
 .button {
   width: 116px;
   height: 92px;
-  border: 1px solid var(--white);
   display: flex;
   background-color: #919191;
   align-items: center;
