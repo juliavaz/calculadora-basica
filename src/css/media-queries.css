@@ -64,6 +64,7 @@
     width: 347px;
     height: 99px;
     font-size: 32px;
+    margin-bottom: 10px;
   }
 
   .zero {
@@ -78,8 +79,7 @@
   }
 
   #containerHistorico {
-    width: 311px;
-    height: 580px;
+    display: none;
   }
 
   .clearButton {
@@ -88,8 +88,24 @@
     font-size: 48px;
   }
 
-  #containerhistoricocelular {
-    display: none;
-    opacity: 0;
+  #containerboxcelular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 344px;
+    height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+  }
+
+  #containerboxcelular > button {
+    font-family: Montserrat;
+    font-size: 18px;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

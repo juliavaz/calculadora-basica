@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap" rel="stylesheet">
   <script src="src/js/math-expression-evaluator.min.js"></script>
   <script src="src/js/calculadora.js"></script>
+  <script src="src/js/animation.js"></script>
 </head>
 
 <body>
@@ -23,6 +24,11 @@
       <div id="containerdisplay">
         <div class="clearButton" onclick="press('clear')">C</div>
         <div id="display">
+        </div>
+        <div id="containerhistoricocelular">
+          <div id="containerboxcelular">
+            <button>Histórico</button>
+          </div>
         </div>
       </div>
       <div id="buttons">
@@ -44,12 +50,11 @@
         
         <div class="button zero" onclick="press(0)">0</div>
         <div class="button" onclick="press('.')">&#8901;</div>
-        <div class="button operacao" onclick="press('&#xf7')">&#xf7;</div>
+        <div class="button operacao" onclick="press('/')">&#xf7;</div>
 
         <div class="button igual" onclick="press('=')">&#61;</div>
       </div>
     </div>
-    <div id="containerhistoricocelular">
       <div id="containerHistorico">
         <div id="box">
           <div id="containerbox">
@@ -59,7 +64,6 @@
           <div id="historicoExpressoes">
             <p></p>
           </div>
-      </div>
     </div>
   </div>
 </body>
