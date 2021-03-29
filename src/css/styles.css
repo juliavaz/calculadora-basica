@@ -45,6 +45,10 @@ body {
   margin-right: 66px;
 }
 
+#containerdisplay {
+  position: relative;
+}
+
 #display {
   width: 585px;
   height: 144px;
@@ -98,9 +102,9 @@ body {
   color: white;
   font-weight: 300;
   font-size: 64px;
-  position: fixed;
+  position: absolute;
   margin-left: 500px;
-  margin-top: 60px;
+  margin-top: 50px;
   cursor: pointer;
 }
 
