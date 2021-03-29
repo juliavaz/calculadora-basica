@@ -29,6 +29,13 @@ let updateHistory = (expression, expressionResult) => {
 
   let domHistoryMobile = document.getElementById("historicoExpressoesMobile");
   domHistoryMobile.innerHTML = history;
+
+  const modalHistory = document.querySelector(".transition");
+
+  domHistoryMobile.addEventListener("click", (e) => {
+    e.preventDefault();
+    modalHistory.classList.remove("is-active");
+  });
 };
 
 let updateDisplay = (newText, clear) => {

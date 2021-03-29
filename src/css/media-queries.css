@@ -68,7 +68,6 @@
     height: 99px;
     font-size: 32px;
     margin-bottom: 10px;
-    overflow-x: scroll;
   }
 
   .zero {
@@ -125,7 +124,8 @@
 
   #historicoExpressoesMobile {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
     margin-top: 60px;
     font-family: Montserrat;
     font-weight: 600;
@@ -146,6 +146,11 @@
     overflow-y: scroll;
   }
 
+  .containerexpressoesmobile {
+    display: flex;
+    justify-content: center;
+  }
+
   .modal-content {
     background-color: black;
     margin: 0 auto;
@@ -153,7 +158,8 @@
     width: 90%;
     height: 77%;
     border-radius: 20px;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: scroll;
   }
 
   .modal-content > p {
