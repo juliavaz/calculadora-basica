@@ -1,16 +1,16 @@
-let expression = "";
-let history = "";
+let expression = '';
+let history = '';
 
 let press = (key) => {
-  if (key === "=") {
+  if (key === '=') {
     let result = mexp.eval(expression);
     updateDisplay(result, true);
     updateHistory(expression, `${expression} = ${result}`);
     expression = result;
-  } else if (key === "clear") {
+  } else if (key === 'clear') {
     clearDisplay();
   } else {
-    expression += "" + key;
+    expression += '' + key;
     updateDisplay(key, false);
   }
 };
@@ -23,25 +23,28 @@ let backspace = () => {
 let updateHistory = (expression, expressionResult) => {
   history +=
     `<div class="history-block" onclick="loadHistory('${expression}')">${expressionResult} <img src="src/img/copy-icon.svg" width="15px" style="margin-left: 5px; margin-bottom: 10px;"></div>` +
-    "<br>";
-  let domHistory = document.getElementById("historicoExpressoes");
+    '<br>';
+
+  copyPswd(expressionResult);
+
+  let domHistory = document.getElementById('historicoExpressoes');
   domHistory.innerHTML = history;
 
-  let domHistoryMobile = document.getElementById("historicoExpressoesMobile");
+  let domHistoryMobile = document.getElementById('historicoExpressoesMobile');
   domHistoryMobile.innerHTML = history;
 
-  const modalHistory = document.querySelector(".transition");
+  const modalHistory = document.querySelector('.transition');
 
-  domHistoryMobile.addEventListener("click", (e) => {
+  domHistoryMobile.addEventListener('click', (e) => {
     e.preventDefault();
-    modalHistory.classList.remove("is-active");
+    modalHistory.classList.remove('is-active');
   });
 };
 
 let updateDisplay = (newText, clear) => {
-  let display = document.getElementById("display");
+  let display = document.getElementById('display');
   if (clear === true) {
-    display.innerText = "";
+    display.innerText = '';
     display.innerText = newText;
   } else {
     display.innerText = display.innerText += newText;
@@ -49,7 +52,7 @@ let updateDisplay = (newText, clear) => {
 };
 
 let clearDisplay = () => {
-  expression = "";
+  expression = '';
   updateDisplay(expression, true);
 };
 
@@ -62,42 +65,42 @@ let addKey = (event) => {
   let code = event.keyCode;
   let char = String.fromCharCode(code);
 
-  if (char == "0") {
+  if (char == '0') {
     press(char, false);
-  } else if (char == "1") {
+  } else if (char == '1') {
     press(char, false);
-  } else if (char == "2") {
+  } else if (char == '2') {
     press(char, false);
-  } else if (char == "3") {
+  } else if (char == '3') {
     press(char, false);
-  } else if (char == "4") {
+  } else if (char == '4') {
     press(char, false);
-  } else if (char == "5") {
+  } else if (char == '5') {
     press(char, false);
-  } else if (char == "6") {
+  } else if (char == '6') {
     press(char, false);
-  } else if (char == "7") {
+  } else if (char == '7') {
     press(char, false);
-  } else if (char == "8") {
+  } else if (char == '8') {
     press(char, false);
-  } else if (char == "9") {
+  } else if (char == '9') {
     press(char, false);
-  } else if (char == "*") {
+  } else if (char == '*') {
     press(char, false);
-  } else if (char == "+") {
+  } else if (char == '+') {
     press(char, false);
-  } else if (char == "-") {
+  } else if (char == '-') {
     press(char, false);
-  } else if (char == ".") {
+  } else if (char == '.') {
     press(char, false);
-  } else if (char == "/") {
+  } else if (char == '/') {
     press(char, false);
-  } else if (char == "=") {
-    press("=", false);
-  } else if (char == "c") {
-    press("clear", false);
-  } else if (code == "13") {
-    press("=", false);
+  } else if (char == '=') {
+    press('=', false);
+  } else if (char == 'c') {
+    press('clear', false);
+  } else if (code == '13') {
+    press('=', false);
   } else {
   }
   event.preventDefault();
@@ -111,5 +114,14 @@ let checkBackspace = (event) => {
   }
 };
 
-document.addEventListener("keydown", checkBackspace);
-document.addEventListener("keypress", addKey);
+let copyPswd = (result) => {
+  const el = document.createElement('textarea');
+  el.value = result;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+};
+
+document.addEventListener('keydown', checkBackspace);
+document.addEventListener('keypress', addKey);
