@@ -25,7 +25,7 @@ let updateHistory = (expression, expressionResult) => {
     `<div class="history-block" onclick="loadHistory('${expression}')">${expressionResult} <img src="src/img/copy-icon.svg" width="15px" style="margin-left: 5px; margin-bottom: 10px;"></div>` +
     '<br>';
 
-  copyPswd(expressionResult);
+  copyResult(expressionResult);
 
   let domHistory = document.getElementById('historicoExpressoes');
   domHistory.innerHTML = history;
@@ -114,7 +114,7 @@ let checkBackspace = (event) => {
   }
 };
 
-let copyPswd = (result) => {
+let copyResult = (result) => {
   const el = document.createElement('textarea');
   el.value = result;
   document.body.appendChild(el);
